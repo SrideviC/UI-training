@@ -1,0 +1,53 @@
+<link rel="stylesheet" href="survey.component.css">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<div style="text-align: center">
+    <div class="header">
+        <h4>Welcome to User Survey Management System</h4>
+    </div>
+    <p>------------------------------------------------------------------------------------------------------------------</p>
+
+<div>
+    <div>
+      <label for="title">Title</label>
+      <input type="text"  [(ngModel)]="survey1.title"   name="title"  id="title" placeholder="Enter Title" />
+    </div><br>
+    <div>
+      <label for="description">Description</label>
+      <input type="text" [(ngModel)]="survey1.description" name="description" id="description"  placeholder="Enter Description" />
+    </div>
+    <br>
+    <div>
+        <label for="city">City </label>
+        <input type="text"  [(ngModel)]="survey1.city"   name="city"  id="city" placeholder="Enter City" />
+      </div>
+      <br>
+      <div>
+        <label for="state">State</label>
+        <input type="text"  [(ngModel)]="survey1.state"   name="state"  id="state" placeholder="Enter State" />
+      </div>
+      <br>
+      <div>
+        <label for="country">Country</label>
+        <input type="text"  [(ngModel)]="survey1.country"   name="country"  id="country" placeholder="Enter Country" />
+      </div>
+      <br>
+      <div>
+        <label for="zip">Zip Code</label>
+        <input type="text"  [(ngModel)]="survey1.zip"   name="zip"  id="zip" placeholder="Enter zip" />
+      </div>
+      <br>
+      <div>
+        <label for="surveyDate">Survey Date</label>
+        <input type="text"  [(ngModel)]="survey1.surveyDate"   name="surveyDate"  id="surveyDate" placeholder="Enter Survey Date" />
+      </div>
+      <br>
+    <div class="text-center">
+    <!-- <button type="button" href="#/home.component.html" class="btn btn-primary">Login</button> -->
+    <!-- <a href="#/home.component.html"><button class="btn btn-primary">New Page</button></a> -->
+    <button type="button" class="btn btn-primary" (click)="doSurvey()">Survey</button> 
+    
+    </div>
+</div>
+  <p>------------------------------------------------------------------------------------------------------------------</p>
+ 
