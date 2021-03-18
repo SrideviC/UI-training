@@ -1,0 +1,16 @@
+
+label {
+    display: inline-block;
+    width: 150px;
+  }
+
+input{
+    width: 110%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  button{
+      text-align: center;
+  }
+ 
