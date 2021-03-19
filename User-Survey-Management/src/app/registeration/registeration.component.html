@@ -1,0 +1,72 @@
+<link rel="stylesheet" href="registeration.component.css">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<div style="text-align: center">
+    <h4>{{message}}</h4>
+</div> 
+<div style="text-align: center">
+<h1>New User Resgistration</h1>
+<p>----------------------------------------------------------------------------------------------------------</p>
+<form >
+    <table align="center">
+        <tbody>
+           <tr>
+              <td>
+                  <label for="firstName">First Name </label>
+                </td>
+                <td>       
+                    <input type="text" [(ngModel)]="user.firstName" name="firstName" id="firstName" placeholder="Enter First Name">
+                </td> 
+            </tr>
+            <br>
+            <tr>
+                <td>
+                    <label for="lastName">Last Name </label>        
+                </td>
+                <td>
+                    <input type="text" [(ngModel)]="user.lastName" name="lastName" id="lastName" placeholder="Enter Last Name">
+                </td>
+            </tr>
+            <br>
+            <tr>
+                <td>
+                    <label for="emailId">Email Id </label>
+                </td>
+                <td>
+                    <input type="text" [(ngModel)]="user.emailId" name="emailId" id="emailId" placeholder="Enter emailId">
+                </td>
+            </tr>
+            <br>
+            <tr>
+                <td>
+                    <label for="mobile">Mobile No </label>
+                </td>
+                <td>
+                    <input type="text" [(ngModel)]="user.mobile" name="mobile" id="mobile" placeholder="Enter Mobile No">
+                </td>
+            </tr>
+            <br>
+            <tr>
+                <td>
+                    <label for="password">Password   </label>
+                </td>
+                <td>
+                    <input type="text" [(ngModel)]="user.password" name="password" id="password" placeholder="Enter Password">
+                </td>
+            </tr>
+            <br>
+            <tr>
+                <td>
+                    <button type="button" class="btn btn-primary" (click)="registerDo()">Sign Up</button>
+
+                </td>
+            </tr>
+            <br>
+
+        </tbody>
+    </table>
+</form>
+
+<p>----------------------------------------------------------------------------------------------------------</p>
+<p><b>Already Registered! Please <a routerLink = "/login" style="color:dodgerblue">Login</a></b></p>
+</div>
